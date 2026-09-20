@@ -49,4 +49,3 @@ A home lab for detecting, investigating, and documenting real-world attacks usin
 ## 📬 Contact
 
 - GitHub: [@VaibhavJ0shi](https://github.com/VaibhavJ0shi)
-EOF
