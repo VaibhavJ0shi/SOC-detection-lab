@@ -5,4 +5,4 @@
 # Description: Detects multiple failed login attempts against
 #              the same account, a common password-guessing attack.
 
-index=main EventCode=4625 | stats count by Account_Name, ComputerName | where count >= 3 | rename Account_Name as "Target_Account" ComputerName as "Host" count as "Failed_Attempts" | table Target_Account, Host, Failed_Attempts
+index=main EventCode=4625 | stats count by Account_Name, ComputerName | where count >= 5 | rename Account_Name as "Target_Account" ComputerName as "Host" count as "Failed_Attempts" | table Target_Account, Host, Failed_Attempts
