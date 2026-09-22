@@ -5,8 +5,4 @@
 # Description: Detects creation of new local user accounts,
 #              a common persistence technique used by attackers.
 
-index=main EventCode=4720
-| stats count by Account_Name, ComputerName
-| rename Account_Name as "Account"
-         ComputerName as "Host"
-| table Account, Host, count
+index=main EventCode=4720 | stats count by Account_Name, ComputerName | rename Account_Name as "Account" ComputerName as "Host" | table Account, Host, count
