@@ -1,0 +1,12 @@
+# Detection Rule: Suspicious Account Creation
+# MITRE ATT&CK: T1136 - Create Account
+# Author: Vaibhav Joshi
+# Date: 2026-09-22
+# Description: Detects creation of new local user accounts,
+#              a common persistence technique used by attackers.
+
+index=main EventCode=4720
+| stats count by Account_Name, ComputerName
+| rename Account_Name as "Account"
+         ComputerName as "Host"
+| table Account, Host, count
