@@ -6,12 +6,13 @@ Automated scheduled alerts configured for each detection rule.
 are configured directly via `savedsearches.conf`. This is functionally 
 equivalent to native alerting.)*
 
-| Alert Name | MITRE ID | Schedule | Next Run |
+| Alert Name | MITRE ID | Schedule |
 |---|---|---|---|
-| T1136 - Account Creation Detection | T1136.001 | Every 5 min | 19:20 IST |
-| T1110 - Brute Force Login Attempts | T1110 | Every 5 min | 19:20 IST |
-| T1059.001 - Suspicious PowerShell | T1059.001 | Every 5 min | 19:20 IST |
-| T1547.001 - Startup Folder Persistence | T1547.001 | Every 5 min | 19:20 IST |
+| T1136 - Account Creation Detection | T1136.001 | Every 5 min |
+| T1110 - Brute Force Login Attempts | T1110 | Every 5 min |
+| T1059.001 - Suspicious PowerShell | T1059.001 | Every 5 min |
+| T1547.001 - Startup Folder Persistence | T1547.001 | Every 5 min |
+| T1071 - Suspicious C2 Connection | T1071, T1571 | Every 5 min |
 
 ## Configuration Method
 
