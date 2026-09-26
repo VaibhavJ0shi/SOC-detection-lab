@@ -43,6 +43,7 @@ A home lab for detecting, investigating, and documenting real-world attacks usin
 | Brute Force Login Attempts | T1110 | Brute Force |
 | Suspicious PowerShell Encoded Command | T1059.001 | PowerShell |
 | Startup Folder Persistence | T1547.001 | Registry Run Keys / Startup Folder |
+| Suspicious C2 Connection | T1071, T1571 | Application Layer Protocol / Non-Standard Port |
 
 ## 📊 Progress
 
