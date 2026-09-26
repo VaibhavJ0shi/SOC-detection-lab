@@ -7,7 +7,7 @@ are configured directly via `savedsearches.conf`. This is functionally
 equivalent to native alerting.)*
 
 | Alert Name | MITRE ID | Schedule |
-|---|---|---|---|
+|---|---|---|
 | T1136 - Account Creation Detection | T1136.001 | Every 5 min |
 | T1110 - Brute Force Login Attempts | T1110 | Every 5 min |
 | T1059.001 - Suspicious PowerShell | T1059.001 | Every 5 min |
