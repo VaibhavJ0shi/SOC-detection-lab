@@ -1,0 +1,9 @@
+# Detection Rule: Suspicious Command & Control Connection
+# MITRE ATT&CK: T1071 - Application Layer Protocol
+#               T1571 - Non-Standard Port
+# Author: Vaibhav Joshi
+# Date: 2026-09-26
+# Description: Detects outbound connections to non-standard ports,
+#              which may indicate Command & Control (C2) traffic.
+
+index=main 4444 | stats count by host | rename host as "Host" | table Host, count
