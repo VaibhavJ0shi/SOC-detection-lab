@@ -8,3 +8,4 @@ Custom SPL detection rules mapped to MITRE ATT&CK.
 | Brute Force Login Attempts | T1110 | Brute Force | [T1110_bruteforce.spl](windows/T1110_bruteforce.spl) |
 | Suspicious PowerShell Encoded Command | T1059.001 | PowerShell | [T1059_powershell_encoded.spl](windows/T1059_powershell_encoded.spl) |
 | Startup Folder Persistence | T1547.001 | Registry Run Keys / Startup Folder | [T1547_startup_persistence.spl](windows/T1547_startup_persistence.spl) |
+| Suspicious C2 Connection | T1071, T1571 | Application Layer Protocol / Non-Standard Port | [T1071_c2_connection.spl](windows/T1071_c2_connection.spl) |
