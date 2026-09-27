@@ -1,10 +1,6 @@
 # Investigation #01 - Suspicious Account Creation
 
-**Report ID :** INV-001
-**Date :** 2026-09-27
-**Analyst :** Vaibhav Joshi
-**Severity :** Medium
-**Status :** Closed - True Positive
+**Report ID :** INV-001 | **Date :** 2026-09-27 | **Analyst :** Vaibhav Joshi | **Severity :** Medium | **Status :** Closed - True Positive
 
 ---
 
