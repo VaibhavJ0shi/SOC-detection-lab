@@ -1,20 +1,21 @@
 # Investigation #01 - Suspicious Account Creation
 
-**Report ID :** INV-001 | **Date :** 2026-09-27 | **Analyst :** Vaibhav Joshi | **Severity :** Medium | **Status :** Closed - True Positive
+**Report ID :** INV-001  
+**Date :** 2026-09-27  
+**Analyst :** Vaibhav Joshi  
+**Severity :** Medium  
+**Status :** Closed - True Positive
 
 ---
 
 ## 🚨 Alert
 
-**Detection Rule :** T1136_account_creation.spl
-
+**Detection Rule :** T1136_account_creation.spl  
 **Trigger :** 
  - EventCode 4720 - A user account was created
  - EventCode 4732 - Member added to 'Users' group
- - EventCode 4732 - Member added to 'Administrators' group
-
-**Host :** Windows10-Victim (DESKTOP-5TRJPSS)
-
+ - EventCode 4732 - Member added to 'Administrators' group  
+**Host :** Windows10-Victim (DESKTOP-5TRJPSS)  
 **Time :** 
  - Event 4720 : 2026-09-22 07:03:02 PM
  - Event 4732 (Users) : 2026-09-22 07:03:02 PM
