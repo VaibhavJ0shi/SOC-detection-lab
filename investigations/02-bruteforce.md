@@ -1,19 +1,19 @@
 # Investigation #02 — Brute Force Login Attempts
 
-**Report ID:** INV-002 | **Date:** 2026-09-28 | **Analyst:** Vaibhav Joshi | **Severity:** Medium | **Status:** Closed — True Positive
+**Report ID:** INV-002  
+**Date:** 2026-09-28  
+**Analyst:** Vaibhav Joshi  
+**Severity:** Medium  
+**Status:** Closed — True Positive  
 
 ---
 
 ## 🚨 Alert
 
-**Detection Rule:** T1110_bruteforce.spl
-
-**Trigger:**
-- EventCode 4625 — An account failed to log on (10 attempts)
-
-**Host:** Windows10-Victim (DESKTOP-5TRJPSS)
-
-**Time:** 2026-09-28 07:20:22 PM
+**Detection Rule:** T1110_bruteforce.spl  
+**Trigger:** EventCode 4625 — An account failed to log on (10 attempts)  
+**Host:** Windows10-Victim (DESKTOP-5TRJPSS)  
+**Time:** 2026-09-28 07:20:22 PM  
 
 ---
 
