@@ -52,7 +52,7 @@ A home lab for detecting, investigating, and documenting real-world attacks usin
 - [x] Phase 2 — Log collection working
 - [x] Phase 3 — Detection rules (4 rules)
 - [x] Phase 4 — Splunk alerts & SOC dashboard
-- [ ] Phase 5 — Investigation reports
+- [x] Phase 5 — Investigation reports
 - [ ] Phase 6 — 5 investigations total
 - [ ] Phase 7 — Python automation
 - [ ] Phase 8 — Publish & polish
