@@ -1,0 +1,6 @@
+_time,EventCode,Account_Name,ComputerName,CommandLine,DestinationIp,DestinationPort
+2026-09-22 19:03:02,4720,hacker,DESKTOP-5TRJPSS,,,
+2026-09-22 19:03:02,4732,varun,DESKTOP-5TRJPSS,,,
+2026-09-28 19:20:22,4625,varun,DESKTOP-5TRJPSS,,,
+2026-09-29 18:36:14,1,varun,DESKTOP-5TRJPSS,"powershell.exe -EncodedCommand SQBFAFgA...",,
+2026-09-26 20:06:37,3,varun,DESKTOP-5TRJPSS,,192.168.56.1,4444
