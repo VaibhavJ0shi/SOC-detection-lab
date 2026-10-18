@@ -1,0 +1,8 @@
+2026-09-22 19:03:02 EventCode=4720 Account_Name=hacker ComputerName=DESKTOP-5TRJPSS
+2026-09-22 19:03:02 EventCode=4732 Account_Name=varun ComputerName=DESKTOP-5TRJPSS
+2026-09-28 19:20:22 EventCode=4625 Account_Name=varun SourceIp=192.168.56.1
+2026-09-29 18:36:14 EventCode=1 Image=powershell.exe CommandLine=EncodedCommand MD5=5DA0C98136D98DFEC4716ED79C7145F
+2026-09-26 20:06:37 EventCode=3 DestinationIp=192.168.56.1 DestinationPort=4444
+C2 server: http://malicious-c2.example.com/beacon
+Payload hash: SHA256=58189CB04E6D0DC7D0EE6B6A6F75652FC9FA4CFC0E0BA7D6D8C3FBED805381F
+Attacker email: attacker@evil-domain.com
