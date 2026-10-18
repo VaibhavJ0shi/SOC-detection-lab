@@ -82,17 +82,17 @@ Will enrich extracted IOCs using threat intel APIs:
 
 ## 📂 Folder Structure
 
-scripts/
-├── parsers/          # Log parsing scripts
-│   └── log_parser.py
-├── extractors/       # IOC extraction scripts
-│   └── ioc_extractor.py
-├── enrichers/        # API enrichment scripts (coming soon)
-├── samples/          # Sample data for testing
-│   ├── sample_events.csv
-│   └── sample_iocs.txt
-├── venv/             # Virtual environment (gitignored)
-└── README.md
+scripts/  
+├── parsers/          # Log parsing scripts  
+│   └── log_parser.py  
+├── extractors/       # IOC extraction scripts  
+│   └── ioc_extractor.py  
+├── enrichers/        # API enrichment scripts (coming soon)  
+├── samples/          # Sample data for testing  
+│   ├── sample_events.csv  
+│   └── sample_iocs.txt  
+├── venv/             # Virtual environment (gitignored)  
+└── README.md  
 
 ---
 
