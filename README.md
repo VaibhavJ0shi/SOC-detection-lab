@@ -20,16 +20,16 @@ This lab was built to practice and demonstrate **blue team / SOC analyst** skill
 
 ## 🏗️ Lab Architecture
 
-[Kali Linux (Attacker)] 
-        │ (Simulates Attack)
-        ▼
-[Windows 10 VM (Victim)] ──(Sysmon & Event Logs)──> [Splunk Universal Forwarder]
-                                                            │
-                                                            ▼
-                                                  [Splunk Enterprise (SIEM)]
-                                                            │
-                                                            ▼
-                                                  [Alerts & Investigation]
+[Kali Linux (Attacker)]  
+        │ (Simulates Attack)  
+        ▼  
+[Windows 10 VM (Victim)] ──(Sysmon & Event Logs)──> [Splunk Universal Forwarder]  
+                                                            │  
+                                                            ▼  
+                                                  [Splunk Enterprise (SIEM)]  
+                                                            │  
+                                                            ▼  
+                                                  [Alerts & Investigation]  
 
 ---
 
