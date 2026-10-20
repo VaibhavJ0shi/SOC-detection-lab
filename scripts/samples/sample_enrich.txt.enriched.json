@@ -1,0 +1,50 @@
+[
+  {
+    "value": "192.168.56.1",
+    "type": "IP",
+    "source": "AbuseIPDB",
+    "score": 100,
+    "verdict": "malicious",
+    "reason": "Known attacker IP (lab)"
+  },
+  {
+    "value": "192.168.56.101",
+    "type": "IP",
+    "source": "AbuseIPDB",
+    "score": 0,
+    "verdict": "internal",
+    "reason": "Internal lab host"
+  },
+  {
+    "value": "8.8.8.8",
+    "type": "IP",
+    "source": "AbuseIPDB",
+    "score": 0,
+    "verdict": "clean",
+    "reason": "Google DNS"
+  },
+  {
+    "value": "5DA0C98136D98DFEC4716ED79C7145F",
+    "type": "Unknown",
+    "source": "VirusTotal",
+    "score": 0,
+    "verdict": "clean",
+    "reason": "Windows Calculator"
+  },
+  {
+    "value": "58189CB04E6D0DC7D0EE6B6A6F75652FC9FA4CFC0E0BA7D6D8C3FBED805381F",
+    "type": "Unknown",
+    "source": "VirusTotal",
+    "score": 0,
+    "verdict": "clean",
+    "reason": "Windows Calculator"
+  },
+  {
+    "value": "malicious-c2.example.com",
+    "type": "Domain",
+    "source": "URLVoid",
+    "score": 85,
+    "verdict": "malicious",
+    "reason": "Known C2 domain"
+  }
+]
