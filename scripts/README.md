@@ -53,12 +53,19 @@ Extracts Indicators of Compromise from any log or text file using regex patterns
 
 ---
 
-### 3. IOC Enricher (enrichers/ioc_enricher.py) — Coming Soon
+### 3. IOC Enricher (enrichers/ioc_enricher.py)
 
-Will enrich extracted IOCs using threat intel APIs:
-- VirusTotal (file hashes)
-- AbuseIPDB (IP addresses)
-- URLVoid (domains)
+Enriches extracted IOCs with threat intelligence.
+
+**Usage:**
+`python3 enrichers/ioc_enricher.py <path-to-ioc-file>`
+
+**Features:**
+- Automatic IOC type classification (IP, hash, domain)
+- Threat intel lookup (mock mode by default)
+- Color-coded verdicts (malicious / clean / internal / unknown)
+- JSON export of full results
+- API integration templates for VirusTotal and AbuseIPDB
 
 ---
 
