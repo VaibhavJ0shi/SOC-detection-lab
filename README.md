@@ -1,62 +1,95 @@
-# SOC Detection Lab
+# 🛡️ SOC Detection Lab
 
-A home lab for detecting, investigating, and documenting real-world attacks using Splunk, Sysmon, and MITRE ATT&CK.
+An end-to-end Security Operations Center (SOC) home lab for simulating real-world attacks, writing custom Splunk detection rules, configuring automated alerts, and documenting full incident investigations mapped to MITRE ATT&CK.
 
-> 🚧 **Status:** In progress — 4 of 8 phases complete.
+> 🏆 **Status:** Complete — 5 Detection Rules | 5 Alerts | 5 Investigation Reports | 3 Python Automation Scripts
 
-## 🎯 Project Goals
+---
 
-- Build a working SOC lab with Splunk as the SIEM
-- Write custom SPL detection rules mapped to MITRE ATT&CK
-- Simulate attacks and document investigations like a real analyst
-- Automate log parsing and IOC extraction with Python
+## 🎯 Project Overview
 
-## 🏗️ Architecture
+This lab was built to practice and demonstrate **blue team / SOC analyst** skills. It covers the full detection lifecycle:
 
-[Kali Attacker] → [Windows Victim] → [Splunk SIEM] → [Alerts & Reports]
+1. **Telemetry** — Collect endpoint logs using Sysmon & Windows Event Logs.
+2. **Detection** — Write custom SPL rules in Splunk based on MITRE ATT&CK.
+3. **Alerting** — Configure automated scheduled searches.
+4. **Investigation** — Perform triage, build timelines, extract IOCs, and write incident reports.
+5. **Automation** — Use Python to parse logs, extract IOCs, and enrich threat intel.
 
-*(diagram coming soon)*
+---
 
-## 📂 Repo Structure
+## 🏗️ Lab Architecture
+
+[Kali Linux (Attacker)] 
+        │ (Simulates Attack)
+        ▼
+[Windows 10 VM (Victim)] ──(Sysmon & Event Logs)──> [Splunk Universal Forwarder]
+                                                            │
+                                                            ▼
+                                                  [Splunk Enterprise (SIEM)]
+                                                            │
+                                                            ▼
+                                                  [Alerts & Investigation]
+
+---
+
+## 🎯 Detection Rules & Investigations
+
+I simulated 5 distinct attack scenarios, wrote an SPL rule for each, and documented the investigation.
+
+| # | Investigation | MITRE ATT&CK | Severity | Report |
+|---|---|---|---|---|
+| 01 | Suspicious Account Creation | T1136.001, T1098 | Medium | [View Report](investigations/01-account-creation.md) |
+| 02 | Brute Force Login Attempts | T1110.001 | Medium | [View Report](investigations/02-bruteforce.md) |
+| 03 | Encoded PowerShell Command | T1059.001, T1027, T1105 | High | [View Report](investigations/03-powershell-encoded.md) |
+| 04 | Startup Folder Persistence | T1547.001, T1036.005 | Medium | [View Report](investigations/04-startup-persistence.md) |
+| 05 | Command & Control (C2) Connection | T1071, T1571 | High | [View Report](investigations/05-c2-connection.md) |
+
+👉 **[Click here to view all Detection Rules (SPL)](rules/)**
+
+---
+
+## 🐍 Python Automation Tools
+
+To make investigations faster, I built 3 Python scripts:
+
+1. **Log Parser** (`scripts/parsers/`) — Parses Splunk-exported CSVs and summarizes events.
+2. **IOC Extractor** (`scripts/extractors/`) — Uses Regex to automatically pull IPs, hashes, domains, and usernames from raw logs.
+3. **IOC Enricher** (`scripts/enrichers/`) — Classifies IOCs and enriches them with threat intel (mock API integration).
+
+👉 **[Click here to view the Scripts Documentation](scripts/)**
+
+---
+
+## 📂 Repository Structure
 
 | Folder | Purpose |
 |---|---|
-| `rules/` | Custom SPL detection rules (4 written) |
-| `alerts/` | Splunk scheduled alert documentation |
-| `investigations/` | Written incident reports (coming soon) |
-| `scripts/` | Python automation (IOC extraction, log parsing) |
-| `lab-setup/` | Setup docs + screenshots |
+| `rules/` | Custom SPL detection rules mapped to MITRE ATT&CK |
+| `alerts/` | Documentation for automated Splunk alerts |
+| `investigations/` | Full incident investigation reports |
+| `scripts/` | Python automation tools (Parsers, Extractors, Enrichers) |
+| `lab-setup/` | Architecture docs, sysmon configs, and 37+ screenshots |
+
+---
 
 ## 🛠️ Tech Stack
 
 - **SIEM:** Splunk Enterprise (Free license)
-- **Endpoint telemetry:** Sysmon (Windows)
+- **Endpoint Telemetry:** Sysmon, Windows Event Logs
 - **Attacker:** Kali Linux
 - **Frameworks:** MITRE ATT&CK
-- **Languages:** Python, SPL, YAML
+- **Languages:** Python (pandas, rich), SPL, Bash
+- **Tools:** Hydra, Netcat, VirtualBox
 
-## 🎯 Detection Rules
+---
 
-| Rule | MITRE ID | Technique |
-|---|---|---|
-| Suspicious Account Creation | T1136.001 | Create Account |
-| Brute Force Login Attempts | T1110 | Brute Force |
-| Suspicious PowerShell Encoded Command | T1059.001 | PowerShell |
-| Startup Folder Persistence | T1547.001 | Registry Run Keys / Startup Folder |
-| Suspicious C2 Connection | T1071, T1571 | Application Layer Protocol / Non-Standard Port |
+## 📸 Lab Setup & Screenshots
 
-## 📊 Progress
+All screenshots documenting the setup, detection rules firing, and dashboard views are available in the **[`lab-setup/screenshots/`](lab-setup/screenshots/)** directory.
 
-- [x] Phase 0 — Repo setup
-- [x] Phase 1 — Splunk installed
-- [x] Phase 2 — Log collection working
-- [x] Phase 3 — Detection rules (4 rules)
-- [x] Phase 4 — Splunk alerts & SOC dashboard
-- [x] Phase 5 — Investigation reports
-- [x] Phase 6 — 5 investigations total
-- [ ] Phase 7 — Python automation
-- [ ] Phase 8 — Publish & polish
+---
 
 ## 📬 Contact
 
-- GitHub: [@VaibhavJ0shi](https://github.com/VaibhavJ0shi)
+- **GitHub:** [@VaibhavJ0shi](https://github.com/VaibhavJ0shi)
